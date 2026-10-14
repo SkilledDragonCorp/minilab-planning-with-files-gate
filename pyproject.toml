@@ -1,0 +1,39 @@
+[project]
+name = "minilab-planning-with-files-gate"
+version = "0.1.0"
+description = "SkilledDragon minilab: planning-with-files crash-proof completion gate that survives /clear"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "SkilledDragon LLC", email = "hello@skilleddragon.com" }]
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.0",
+    "pyyaml>=6.0",
+    "ruff>=0.8.0",
+    "pip-audit>=2.7.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = []
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["tests", "scripts"]
+extend-exclude = ["vendor"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

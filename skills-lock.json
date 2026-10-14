@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "planning-with-files": {
+      "source": "./vendor/planning-with-files",
+      "sourceType": "local",
+      "computedHash": "e4a879f0b188b2a044fbff8db234b849578b3eddd513b51496ef46a875edfd3c"
+    }
+  }
+}

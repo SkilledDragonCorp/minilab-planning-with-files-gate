@@ -1,0 +1,2 @@
+# osv-scanner config for upstream Node lockfiles at the pinned SHA.
+# Lab Python deps are audited via pip-audit in the lab job.
